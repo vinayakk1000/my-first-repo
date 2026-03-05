@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                    git  https://github.com/vinayakk1000/my-first-repo
+            }
+        }
+        stage('build'){
+        
+            steps{
+                 bat 'java name'
+                
+            }
+        }
+        }
+}
